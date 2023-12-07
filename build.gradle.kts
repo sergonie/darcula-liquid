@@ -12,7 +12,7 @@ repositories {
 
 // Configure Gradle IntelliJ Plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
 intellij {
-    version.set("2023.1.3")
+    version.set("2023.3")
     plugins.set(listOf(/* Plugin Dependencies */))
 }
 
@@ -20,7 +20,7 @@ tasks {
     patchPluginXml {
         // https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html#intellij-platform-based-products-of-recent-ide-versions
         sinceBuild.set("211")
-        untilBuild.set("232.*")
+        untilBuild.set("233.*")
     }
 
     signPlugin {
